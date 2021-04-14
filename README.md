@@ -54,3 +54,17 @@ $ php -S 0.0.0.0:8080 -ddisplay_errors=0 -t public public/index.php
 
 # O servidor inciará na porta:8080 - acesse <http://localhost:8080>
 ```
+
+
+### Autor
+---
+
+<a href="marcosrcamargo.github.io">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/12204644?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Marcos Camargo</b></sub></a> <a href="marcosrcamargo.github.io" title="WEDEV-TECH">🚀</a>
+
+
+👋🏽 Entre em contato!
+ [![Linkedin Badge](https://img.shields.io/badge/-Marcos%20Camargo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcosrubenscamargo/)](https://www.linkedin.com/in/marcosrubenscamargo/) 
+[![Gmail Badge](https://img.shields.io/badge/-marcos.marrize@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:marcos.marrize@gmail.com)](mailto:marcos.marrize@gmail.com)
