@@ -21,9 +21,12 @@
 <h4 align="center"> 
 	🚧  API gestão de clientes 🚀 Em construção...  🚧
 </h4>
-A documentação da API foi construida utilizando a ferramenta BluePrint e pode ser conferida no seginte endereço:
+A documentação da API foi construida utilizando a ferramenta  <a href="https://apiblueprint.org">BluePrint</a>e pode ser conferida no seginte endereço:
 
 [Documentação da API](https://marcosrcamargo.github.io/api_user/)
+
+
+[API Blueprint](https://apiblueprint.org)
 ### Features
 
 - [x] Cadastro de cliente
