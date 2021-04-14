@@ -12,9 +12,9 @@ E um sistema de autenticação para aplicação do cliente.</p>
   "<span class="hljs-attribute">senha</span>": <span class="hljs-value"><span class="hljs-string">"\"****\""</span></span>,
   "<span class="hljs-attribute">certificado</span>": <span class="hljs-value"><span class="hljs-string">"\"certificado\""</span></span>,
   "<span class="hljs-attribute">endereco</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span>
+    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"\"Rua X, Nº 8080\""</span></span>,
+    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"\"Word Wide\""</span></span>,
+    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"\"World\""</span>
   </span>}
 </span>}</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
   "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/draft-04/schema#"</span></span>,
@@ -56,15 +56,23 @@ E um sistema de autenticação para aplicação do cliente.</p>
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
       "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">rua</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Descrição do endereço."</span>
         </span>}</span>,
         "<span class="hljs-attribute">cidade</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome da cidade."</span>
         </span>}</span>,
         "<span class="hljs-attribute">estado</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do Estado."</span>
         </span>}
-      </span>}
+      </span>}</span>,
+      "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
+        <span class="hljs-string">"rua"</span>,
+        <span class="hljs-string">"cidade"</span>,
+        <span class="hljs-string">"estado"</span>
+      ]
     </span>}
   </span>}</span>,
   "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
@@ -95,9 +103,9 @@ E um sistema de autenticação para aplicação do cliente.</p>
     "<span class="hljs-attribute">senha</span>": <span class="hljs-value"><span class="hljs-string">"\"****\""</span></span>,
     "<span class="hljs-attribute">certificado</span>": <span class="hljs-value"><span class="hljs-string">"\"certificado\""</span></span>,
     "<span class="hljs-attribute">endereco</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-      "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-      "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span>
+      "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"\"Rua X, Nº 8080\""</span></span>,
+      "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"\"Word Wide\""</span></span>,
+      "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"\"World\""</span>
     </span>}
   </span>}
 ]</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
@@ -135,9 +143,9 @@ E um sistema de autenticação para aplicação do cliente.</p>
   "<span class="hljs-attribute">senha</span>": <span class="hljs-value"><span class="hljs-string">"\"****\""</span></span>,
   "<span class="hljs-attribute">certificado</span>": <span class="hljs-value"><span class="hljs-string">"\"certificado\""</span></span>,
   "<span class="hljs-attribute">endereco</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span>
+    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"\"Rua X, Nº 8080\""</span></span>,
+    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"\"Word Wide\""</span></span>,
+    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"\"World\""</span>
   </span>}
 </span>}</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
   "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/draft-04/schema#"</span></span>,
@@ -179,15 +187,23 @@ E um sistema de autenticação para aplicação do cliente.</p>
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
       "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">rua</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Descrição do endereço."</span>
         </span>}</span>,
         "<span class="hljs-attribute">cidade</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome da cidade."</span>
         </span>}</span>,
         "<span class="hljs-attribute">estado</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do Estado."</span>
         </span>}
-      </span>}
+      </span>}</span>,
+      "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
+        <span class="hljs-string">"rua"</span>,
+        <span class="hljs-string">"cidade"</span>,
+        <span class="hljs-string">"estado"</span>
+      ]
     </span>}
   </span>}</span>,
   "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
@@ -228,9 +244,9 @@ E um sistema de autenticação para aplicação do cliente.</p>
   "<span class="hljs-attribute">senha</span>": <span class="hljs-value"><span class="hljs-string">"\"****\""</span></span>,
   "<span class="hljs-attribute">certificado</span>": <span class="hljs-value"><span class="hljs-string">"\"certificado\""</span></span>,
   "<span class="hljs-attribute">endereco</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span>
+    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"\"Rua X, Nº 8080\""</span></span>,
+    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"\"Word Wide\""</span></span>,
+    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"\"World\""</span>
   </span>}
 </span>}</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
   "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/draft-04/schema#"</span></span>,
@@ -272,15 +288,23 @@ E um sistema de autenticação para aplicação do cliente.</p>
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
       "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">rua</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Descrição do endereço."</span>
         </span>}</span>,
         "<span class="hljs-attribute">cidade</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome da cidade."</span>
         </span>}</span>,
         "<span class="hljs-attribute">estado</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do Estado."</span>
         </span>}
-      </span>}
+      </span>}</span>,
+      "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
+        <span class="hljs-string">"rua"</span>,
+        <span class="hljs-string">"cidade"</span>,
+        <span class="hljs-string">"estado"</span>
+      ]
     </span>}
   </span>}</span>,
   "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
@@ -321,9 +345,9 @@ E um sistema de autenticação para aplicação do cliente.</p>
   "<span class="hljs-attribute">senha</span>": <span class="hljs-value"><span class="hljs-string">"\"****\""</span></span>,
   "<span class="hljs-attribute">certificado</span>": <span class="hljs-value"><span class="hljs-string">"\"certificado\""</span></span>,
   "<span class="hljs-attribute">endereco</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
-    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span>
+    "<span class="hljs-attribute">rua</span>": <span class="hljs-value"><span class="hljs-string">"\"Rua X, Nº 8080\""</span></span>,
+    "<span class="hljs-attribute">cidade</span>": <span class="hljs-value"><span class="hljs-string">"\"Word Wide\""</span></span>,
+    "<span class="hljs-attribute">estado</span>": <span class="hljs-value"><span class="hljs-string">"\"World\""</span>
   </span>}
 </span>}</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
   "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/draft-04/schema#"</span></span>,
@@ -365,15 +389,23 @@ E um sistema de autenticação para aplicação do cliente.</p>
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
       "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">rua</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Descrição do endereço."</span>
         </span>}</span>,
         "<span class="hljs-attribute">cidade</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome da cidade."</span>
         </span>}</span>,
         "<span class="hljs-attribute">estado</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do Estado."</span>
         </span>}
-      </span>}
+      </span>}</span>,
+      "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
+        <span class="hljs-string">"rua"</span>,
+        <span class="hljs-string">"cidade"</span>,
+        <span class="hljs-string">"estado"</span>
+      ]
     </span>}
   </span>}</span>,
   "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
