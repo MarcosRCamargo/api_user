@@ -55,10 +55,11 @@ Aqui serão especificados o funcionamento da API.
 ### Excluir cliente [DELETE]
 
 + Response 200 (application/json)
-    + Attributes (id_cliente)
+    + Attributes (Cliente)
 
 + Response 404 (application/json)
     + Attributes (Error)
+
 
 ### Alterar Cliente [POST]
 
@@ -77,14 +78,13 @@ Aqui serão especificados o funcionamento da API.
     + Attributes (Error)
 
 
-## Certificado [/cliente/{id_cliente}/certificado/{id_certificado}]
+## Certificado [/cliente/{id_cliente}/certificado/{id_certificado}/{file_name}]
 
 + Parameters
     + id_certificado: 1 (number) - ID do certificado
     + id_cliente: 1 (number) - ID do cliente
     + file_name: "certf.name" (string) - Nome do arquivo do certificado Digital.
-    + url: "http://api.exemplo.com/v1/cliente/certificado/{id_certificado}" (string)
-
+    
 ### Ver certificado [GET]
 
 + Response 200 (application/json)
@@ -96,7 +96,7 @@ Aqui serão especificados o funcionamento da API.
 ### Remover Certificado [DELETE]
 
 + Response 200 (application/json)
-    + Attributes (id_certificado)
+    + Attributes (Certificado)
 
 + Response 400 (application/json)
     + Attributes (Error)
@@ -122,6 +122,12 @@ Aqui serão especificados o funcionamento da API.
 
 ## ClienteUpdate (Cliente)
 + id_cliente (number) - Id do cliente
+
+## Certificado (object)
++ id_certificado (number) - Id do certificado
++ id_cliente (number) - Id do cliente
++ file_name (string) - Nome do arquivo
++ url (string) - Url do certificado
 
 ## Created (object)
 + id (number) - Id gerado
