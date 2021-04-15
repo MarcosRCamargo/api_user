@@ -6,6 +6,8 @@
  * The previous config file has been stored in ./config/modules.config.old
  */
 return [
+    'Zend\Cache',
+    'Zend\Form',
     'Laminas\\Db',
     'Laminas\\Filter',
     'Laminas\\Hydrator',
@@ -25,6 +27,10 @@ return [
     'Laminas\\ApiTools\\Rest',
     'Laminas\\ApiTools\\Rpc',
     'Laminas\\ApiTools\\Versioning',
+    'DoctrineModule',
+    'Phpro\DoctrineHydrationModule',
+    'Laminas\ApiTools\Doctrine\Admin',
+    'Laminas\ApiTools\Doctrine\Server',
     'Application',
     'clientes',
 ];
