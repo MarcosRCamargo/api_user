@@ -1,5 +1,5 @@
 <?php
-namespace clientes;
+namespace ClientesSoluti;
 
 use Laminas\ApiTools\Provider\ApiToolsProviderInterface;
 

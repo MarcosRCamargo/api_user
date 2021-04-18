@@ -38,7 +38,7 @@ Aqui serão especificados o funcionamento da API.
 + Response 404 (application/json)
     + Attributes (Error)
 
-## Cliente [/cliente/{id_cliente}]
+### Dados Cliente [/cliente/{id_cliente}]
 
 + Parameters
     + id_cliente: 1 (number, required) - ID do cliente
@@ -78,6 +78,57 @@ Aqui serão especificados o funcionamento da API.
     + Attributes (Error)
 
 
+### Endereco [/cliente/endereco/{id_endereco}]
+
++ Parameters
+    + id_endereco: 1 (number, required) - ID do endereco
+
+### Ver Endereco [GET]
+
++ Response 200 (application/json)
+    + Attributes (Endereco)
+
++ Response 404 (application/json)
+    + Attributes (Error)
+
+
+### Excluir Endereco [DELETE]
+
++ Response 200 (application/json)
+    + Attributes (Endereco)
+
++ Response 404 (application/json)
+    + Attributes (Error)
+
+
+### Cadastrar Endereco [POST]
+
++ Request Cadastrar o Endereco
+
+    + Headers
+
+            Accept: application/json
+            Content-Type: application/json
+    + Attributes (Endereco)
+
++ Response 200 (application/json)
+    + Attributes (Created)
+
++ Response 400 (application/json)
+### Alterar Endereco [PUT]
+
++ Request Alterar o Endereco
+
+    + Headers
+
+            Accept: application/json
+            Content-Type: application/json
+    + Attributes (Endereco)
+
++ Response 200 (application/json)
+    + Attributes (Updated)
+
++ Response 400 (application/json)
 ## Certificado [/cliente/{id_cliente}/certificado/{id_certificado}/{file_name}]
 
 + Parameters
@@ -105,20 +156,16 @@ Aqui serão especificados o funcionamento da API.
 
 ## Cliente (object)
 + id: 42 (number) - Código do usuário
-+ nome: "Marcos" (string, required)  - Nome do usuário
-+ cpf: "360-648-458-56"(int, required) - CPF do usuário
-+ telefones:[
-    "+5561999362974",
-    "+5538999163594"
-] - Lista de Telefones do Usuário
++ nome: "Marcos"(string, required)  - Nome do usuário
++ cpf:"36064845856"(enum, required)  - CPF do Usuário
++ telefones:"[
+    '+5561999362974',
+    '+5538999163594'
+]" (array, required) - Lista de Telefones do Usuário
 + email: "marcos@mail.com"(string, required)  - e-mail do Usuário
 + data_nasc: "1988-11-01"(date, required)  - Data de Nascimento Usuário
 + senha: "****"(string, required) -  Senha de acesso.
-+ certificado: "certificado"(string, required)  - Certificado Digital do Usuário
-- endereco
-    - rua:"Rua X, Nº 8080" (string, required) -  Descrição do endereço.
-    - cidade: "Word Wide" (string, required) -  Nome da cidade.
-    - estado: "World" (string, required) -  Nome do Estado.
+
 
 ## ClienteUpdate (Cliente)
 + id_cliente (number) - Id do cliente
@@ -129,8 +176,18 @@ Aqui serão especificados o funcionamento da API.
 + file_name (string) - Nome do arquivo
 + url (string) - Url do certificado
 
+## Endereco (object)
++ id_endereco (number) - Id do endereco
++ id_cliente (number) - Id do cliente
++ rua:"Rua X, Nº 8080" (string, required) -  Descrição do endereço.
++ cidade: "Word Wide" (string, required) -  Nome da cidade.
++ estado: "World" (string, required) -  Nome do Estado.
+
 ## Created (object)
 + id (number) - Id gerado
+
+## Updated (object)
++ id (number) - Id atulizado
 
 ## Id (object)
 + id (number) - Id a ser processado
