@@ -30,6 +30,7 @@ return [
     'Laminas\\ZendFrameworkBridge',
     'DoctrineModule',
     'DoctrineORMModule',
+    'ZfrCors',
     'Application',
     'ClientesSoluti',
 ];

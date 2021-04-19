@@ -108,9 +108,9 @@ return [
     ],
     'api-tools-content-negotiation' => [
         'controllers' => [
-            'ClientesSoluti\\V1\\Rest\\Certificados\\Controller' => 'HalJson',
-            'ClientesSoluti\\V1\\Rest\\Endereco\\Controller' => 'HalJson',
-            'ClientesSoluti\\V1\\Rest\\Clientes\\Controller' => 'HalJson',
+            'ClientesSoluti\\V1\\Rest\\Certificados\\Controller' => 'Json',
+            'ClientesSoluti\\V1\\Rest\\Endereco\\Controller' => 'Json',
+            'ClientesSoluti\\V1\\Rest\\Clientes\\Controller' => 'Json',
         ],
         'accept_whitelist' => [
             'ClientesSoluti\\V1\\Rest\\Certificados\\Controller' => [
@@ -192,6 +192,7 @@ return [
                 'hydrator_name' => \Laminas\Hydrator\ArraySerializable::class,
                 'controller_service_name' => 'ClientesSoluti\\V1\\Rest\\Certificados\\Controller',
                 'entity_identifier_name' => 'id',
+                'table_service' => 'ClientesSoluti\\V1\\Rest\\Certificados\\CertificadosResource\\Table',
             ],
             'ClientesSoluti\\V1\\Rest\\Endereco\\EnderecoResource' => [
                 'adapter_name' => \PDO::class,
@@ -469,6 +470,26 @@ return [
                             'max' => '255',
                         ],
                     ],
+                ],
+            ],
+        ],
+    ],
+    'api-tools-mvc-auth' => [
+        'authorization' => [
+            'ClientesSoluti\\V1\\Rest\\Clientes\\Controller' => [
+                'collection' => [
+                    'GET' => false,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
+                ],
+                'entity' => [
+                    'GET' => false,
+                    'POST' => false,
+                    'PUT' => false,
+                    'PATCH' => false,
+                    'DELETE' => false,
                 ],
             ],
         ],
